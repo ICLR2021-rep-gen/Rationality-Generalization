@@ -34,10 +34,10 @@ We compute these simple classifiers for a variety of self-supervised training me
 We provide a theoretical bound for the Memorization gap in Theorem II. This bound can be computed empirically as follows. 
 
 1. Compute K noisy runs using the code above  
-2. Create the $`N \times K`$ matrix of the classifier predictions, where $`N`$ is the number of samples and $`K`$ is the number of trials called `pred_matrix`
-3. Create the $`N \times K`$ matrices of the clean labels and noisy labels respectivly called `y_matrix` and `y_tilde_matrix` respectively.
+2. Create the $N \times K$ matrix of the classifier predictions, where $N$ is the number of samples and $K$ is the number of trials called `pred_matrix`
+3. Create the $N \times K$ matrices of the clean labels and noisy labels respectivly called `y_matrix` and `y_tilde_matrix` respectively.
 
-### Complexity measure $`C^{dc}`$
+### Complexity measure $C^{dc}`$
 
 ```python
 from complexity_functions import complexity, complexity_average
